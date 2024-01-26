@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "junior_shop_case.sln"
+    "dotnet.defaultSolution": "Junior_Shop_Case.sln"
 }
