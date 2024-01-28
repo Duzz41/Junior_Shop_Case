@@ -1,0 +1,59 @@
+# Project Documentation
+
+This document provides a brief overview of the Shop and Inventory features and the Save system in the game.
+
+## ShopManager
+
+### Overview
+
+Manages the in-game shop, including currency, purchases, inventory updates, and UI interactions.
+
+### Key Variables
+
+- **_coins**: Current in-game currency.
+- **_playerPrefsKey**: PlayerPrefs key for saving and loading currency data.
+- **_buttonNo**: Index of the selected shop item.
+- **_infoButtonIsOpen**: Flag for the info button's visibility.
+- **_coinUI**: UI element for displaying currency.
+- **_purchaseButton**: UI button for making purchases.
+- **_inventoryManager**: Reference to the InventoryManager.
+
+### Key Functions
+
+- **Start()**: Initializes UI and checks purchaseability.
+- **OpenPurchaseButton()**: Sets purchase button text and image.
+- **OpenInfoButton()**: Toggles the info button's visibility.
+- **PurchaseItem()**: Handles item purchases and updates inventory.
+- **CheckPurchaseable()**: Enables/disables the purchase button based on currency and item availability.
+- **LoadPanels()**: Populates shop panels with data.
+
+## InventoryManager
+
+### Overview
+
+Manages the player's inventory, initializing and updating inventory panels.
+
+### Key Variables
+
+- **_inventorySlotsSO**: Array of inventory slots.
+- **_inventoryPanelsGO**: Array of inventory panels.
+- **_inventoryPanels**: Visual representation of inventory items.
+
+### Key Functions
+
+- **Start()**: Activates inventory panels.
+- **LoadPanels()**: Updates inventory panels based on available items.
+
+## Save System
+
+### Overview
+
+Implements a simple save system using PlayerPrefs to store and retrieve currency data.
+
+### Key Variable
+
+- **_playerPrefsKey**: PlayerPrefs key for currency data.
+
+### Key Function
+
+- **Awake()**: Loads the saved currency amount before the game starts.
